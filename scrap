@@ -1,0 +1,10 @@
+    <div style="height: 720px;">
+        <div class="flex">
+            <img src="media/DP.png" style="height: 800px;" class="">
+            <h2>Hey, I am <br>MUHAMMED AJFER</h2>
+        </div>
+    </div>
+
+    <section>
+        <div class="h-96 bg-red-700 w-full"></div>
+    </section>

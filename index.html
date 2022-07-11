@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="bg.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="grid grid-flow-cols" style="overflow-x: hidden;">
+    <div id="bg" class="h-[720px] absolute" style="z-index: -2;"></div>
+    <div>
+        <nav class="">
+            <div class="container flex justify-around fixed h-28 mx-auto pt-10 nav-scroll">
+                <div>
+                    <h3 class="text-5xl font-black cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-200">
+                        MHD AJFER
+                    </h3>
+                </div>
+                <div class="">
+                    <ul class="flex space-x-10 text-lg text-white pt-6 cursor-pointer">
+                        <li class=" hover:text-yellow-500">
+                            Home
+                        </li>
+                        <li class=" hover:text-yellow-500">
+                            About
+                        </li>
+                        <li class=" hover:text-yellow-500">
+                            Contact me
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="pt-48 h-screen" >
+        <div class="flex" style="height: 500px;">
+            <div class="w-[800px] relative" >
+                <img src="media/DPP-removebg-preview.png" style="height: 350px;;" class="absolute right-52">
+            </div>
+            <div class="grid content-center" style="margin-top: -110px;">
+                <p class="text-2xl font-semibold" style="font-family: 'Sofia', sans-serif; font-style: oblique; color: #c9d1db;">hello, I am  
+                    <h2 class="text-5xl font-black tracking-wide flex float-left" style="color: #c9d1db;">MUHAMMED <span class="text-white" >&nbspAJFER</span>
+                        <div class="w-4 h-4 rounded-full bg-blue-300 ml-2 mt-[25px]"></div> 
+                    </h2>
+                </p>
+                <p class="mt-20" style="color: #999;"> 
+                    An enthusiastic and self-taught front-end developer. Interested in Full-Stack web development. <br>
+                    Over 4 years of experience in HTML, CSS and 2 year in JavaSript and JQuery. And learned CSS <br>
+                    frameworkes eg. Bootstrap, tailwind etc. I am keen to gain more experience in this domain 
+                </p>
+                <div class="pt-6 space-x-6">
+                    <a href="#" class="fa fa-linkedin w-8 h-8 active:bg-white" style="background: #000000;
+                        color: white; font-size: 20px; border-radius: 50%; text-align: center; padding: 4px;">
+                    </a>
+
+                    <a href="#" class="fa fa-instagram w-8 h-8" style="background: #000000;
+                        color: white; font-size: 20px; border-radius: 50%; text-align: center; padding: 4px;">
+                    </a>
+
+                    <a class="fa fa-github" style="background: #000000;
+                    color: white; font-size: 20px; border-radius: 50%; text-align: center; padding: 4px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section style>
+
+    <section>
+        <div class="h-screen w-full" style="background-color: #192839;">
+            
+        </div>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="bg.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(window).scroll(function(){
+  	    var scroll = $(window).scrollTop();
+	    if (scroll > 300) {
+            console.log("scrolled")
+	        $(".nav-scroll").addClass("bg-black")
+	    }
+        else{
+            $(".nav-scroll").removeClass("bg-black")
+        }
+
+        })  
+        })
+    </script>
+</body>
+</html>

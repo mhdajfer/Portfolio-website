@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+#bg 
+{	
+
+
+  background: linear-gradient(20deg, #192839 50%, #1ab4e2 115%);
+}
+
+h2{
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: Gtwalsheimprotrial, sans-serif;
+}
